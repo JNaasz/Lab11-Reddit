@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  text-align: center;
+  position: relative;
+  background: linear-gradient(#A88A8A, #423636);
+  background-repeat: no-repeat;
+  background-size: cover cover;
+  background-position: center center;
+  height: 100%;
+}
+
+#again {
+  margin: 15px;
+  padding: 2px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+#images {
+  margin-left: 7%;
+  margin-right: 7%;
+  visibility: hidden;
+}
+
+.container {
+  display: inline-block;
+  float: left;
+  height: 205px;
+  width: 21%;
+  margin: 1%;
+  background-color: #5B6066;
+  border-radius: 10%;
+  box-shadow: 10px 10px 10px black;
+  transition: transform 0.25s;
+  border: 8px double #3F312A;
+}
+
+/*#container:hover {
+  transform: scale(1.5);
+  background-color: violet;
+}*/
+
+p {
+  height: 60px;
+  font-size: 120%;
+  padding: 5px;
+  color: #F1E6F4;
+  }
+
+img {
+  height: 125px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+}
+
+.over {
+  transform: scale(1.5);
+  background-color: #AEB6BF;
+  box-shadow: 0px 10px 5px black;
+  color: #3F312A
+}
+
+.over img {
+  border-radius: 12%;
+}
+
+#welcome h2 {
+  padding-top: 85px;
+  color: #3F312A;
+}
+#welcome p {
+  padding-top:10px;
+  color: #A88A8A;
+  transition: transform .2s;
+}
+
+#welcome p:hover {
+  transform: scale(1.5);
+}
+
+#selectionBoxHolder {
+  visibility: hidden;
+}
+
+.holder {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: #F1E6F4;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  /*background: linear-gradient(-90deg, #F1E6F4, #5B6066);*/
+  margin-top: 15%;
+  }
+
+  .inner {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color:#AEB6BF;
+  z-index: 80;
+  }
+
+.border {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  border-width:15px;
+  background: linear-gradient(-90deg, #F1E6F4, #5B6066);
+  transition: transform 6s;
+  z-index: 2;
+}
+
+/*.border:hover {
+  transform: rotate(1080deg);
+}*/
