@@ -3,17 +3,28 @@
 }
 
 html {
-  height: 100%;
+  height: 1100px;
 }
 
-body{
+@font-face {
+  font-family: Elkwood;
+  src: url(../elk.ttf);
+}
+
+@font-face {
+  font-family: VintageAvalanche;
+  src: url(../VintageAvalanche.otf);
+}
+
+
+body {
   text-align: center;
   position: relative;
   background: linear-gradient(#A88A8A, #423636);
   background-repeat: no-repeat;
   background-size: cover cover;
   background-position: center center;
-  height: 100%;
+  height: 1100px;
 }
 
 #again {
@@ -23,16 +34,26 @@ body{
   visibility: hidden;
 }
 
+#title {
+  height: 35px;
+  overflow: hidden;
+  font-family: VintageAvalanche;
+}
+
+#op {
+  color: #A88A8A;
+  height: 23px;
+  }
+
 #images {
   margin-left: 7%;
   margin-right: 7%;
-  /*visibility: hidden;*/
-}
+  }
 
 .container {
   display: inline-block;
   float: left;
-  height: 205px;
+  height: 240px;
   width: 21%;
   margin: 1%;
   background-color: #5B6066;
@@ -40,27 +61,35 @@ body{
   box-shadow: 10px 10px 10px black;
   transition: transform 0.25s;
   border: 8px double #3F312A;
+  font-family: VintageAvalanche;
+}
+
+a {
+  text-decoration: none;
+  display: block;
 }
 
 
 p {
-  height: 60px;
   font-size: 120%;
   padding: 5px;
   color: #F1E6F4;
+  margin-bottom: 0;
+  font-family: VintageAvalanche;
   }
 
 img {
+  margin-top: 0;
   height: 125px;
   border-radius: 50%;
   padding-bottom: 5px;
+  border: 3px solid #F1E6F4;
 }
 
 .over {
   transform: scale(1.5);
   background-color: #AEB6BF;
-  box-shadow: 0px 10px 5px black;
-  color: #3F312A
+  color: #3F312A;
 }
 
 .over img {
@@ -68,13 +97,16 @@ img {
 }
 
 #welcome h2 {
-  padding-top: 85px;
+  padding-top: 90px;
   color: #3F312A;
+  font-family: Elkwood;
+  font-size: 300%;
 }
 #welcome p {
   padding-top: 15px;
   color: #A88A8A;
   transition: transform .2s;
+  font-family: VintageAvalanche;
 }
 
 #welcome p:hover {
@@ -82,6 +114,7 @@ img {
 }
 
 #welcomeHolder {
+  z-index: 60;
 
 }
 
@@ -92,28 +125,31 @@ img {
 
 
 /* this is the section with the input to display the images */
- h3 {
-  padding-top: 85px;
+ h4 {
+  /*padding-top: 75px;*/
   color: #3F312A;
+  padding-bottom: 5px;
 }
 
+.choice {
+  width: 100px;
+  text-align: center;
+}
 
-}
-#selectionBox {
-visibility: hidden;
-}
 
 .holder {
   position: relative;
   height: 280px;
   width: 280px;
   border-radius: 50%;
-  background-color: #F1E6F4;
-  padding: 15px;
+  /*background-color: #F1E6F4;*/
+  padding: 70px;
   margin: 0 auto;
   text-align: center;
   /*background: linear-gradient(-90deg, #F1E6F4, #5B6066);*/
-  margin-top: 10%;
+  margin-top: 5%;
+  z-index: 2;
+  font-family: VintageAvalanche;
   }
 
   .inner {
@@ -123,6 +159,7 @@ visibility: hidden;
   border-radius: 50%;
   background-color:#AEB6BF;
   z-index: 80;
+  margin: 14px;
   }
 
 .border {
@@ -135,7 +172,8 @@ visibility: hidden;
   border-width:15px;
   background: linear-gradient(-90deg, #F1E6F4, #5B6066);
   transition: transform 6s;
-  z-index: 2;
+  z-index: 70;
+  margin: 70px;
 }
 
 .border:hover {
