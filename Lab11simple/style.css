@@ -26,8 +26,7 @@ body{
 #images {
   margin-left: 7%;
   margin-right: 7%;
-  /*visibility: hidden;*/
-}
+  }
 
 .container {
   display: inline-block;
@@ -42,6 +41,10 @@ body{
   border: 8px double #3F312A;
 }
 
+/*#container:hover {
+  transform: scale(1.5);
+  background-color: violet;
+}*/
 
 p {
   height: 60px;
@@ -82,14 +85,8 @@ img {
 }
 
 #welcomeHolder {
-
+//  visibility: hidden;
 }
-
-#newText {
-  margin-top: 38%;
-}
-
-
 
 /* this is the section with the input to display the images */
  h3 {
