@@ -55,7 +55,7 @@ console.log(subreddit);
       search = "";
      });//closing for forEach()
 
-   $('#images div:gt(11)').remove(); //this removes every element aftter index 11
+   $('#images div:gt(6)').remove(); //this removes every element aftter index 11
 
    $('#images div').mouseover(function(){
      $(this).addClass('over');
@@ -67,9 +67,9 @@ console.log(subreddit);
      $('.border').removeClass('spin');
    });
 
-// $(function(){
-//    $('#container')sortable();
-// }
+$(function(){
+   $('#container').sortable();
+});
 
 });// closing for $get function
 
