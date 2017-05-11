@@ -32,6 +32,8 @@ $('#again').on('click', function(){
 //This code adds the reddit divs to the #images div---------
 function searchReddit(subreddit) {
 
+  $('.container').remove();
+
   $.get('https://www.reddit.com/r/' + subreddit + '.json').done(function(response){
 console.log(subreddit);
     console.log(response.data.children[0].data);
@@ -52,8 +54,10 @@ console.log(subreddit);
       '</p>' + '<p id="op">OP: ' + author + '</p><img src=' + thumbnail + '><a href='+ link +'>link to original source</a></div>');
       };
 
-      search = "";
      });//closing for forEach()
+
+     $('#welcome input').reset();
+
 
    $('#images div:gt(11)').remove(); //this removes every element aftter index 11
 
