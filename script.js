@@ -56,7 +56,7 @@ console.log(subreddit);
 
      });//closing for forEach()
 
-     $('#welcome input').reset();
+    //  $('#welcome input').reset();
 
 
    $('#images div:gt(11)').remove(); //this removes every element aftter index 11
